@@ -1,0 +1,17 @@
+[Unit]
+Description=Claude Discord bot - Go (%i)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/apps/discordbot
+EnvironmentFile=/apps/discordbot/bots/%i/bot.env
+Environment=PATH=%h/.local/bin:%h/bin:/usr/local/bin:/usr/bin
+ExecStart=/apps/discordbot/Go/discord-claude-bot
+Restart=on-failure
+RestartSec=10
+KillMode=mixed
+TimeoutStopSec=20
+
+[Install]
+WantedBy=default.target

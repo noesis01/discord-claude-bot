@@ -46,4 +46,4 @@ cp bots/coder/bot.env.example bots/coder/bot.env      # 토큰·사용자 ID 입
 cp discordbot@.service ~/.config/systemd/user/          # 경로가 /apps/discordbot 이 아니면 유닛 안의 경로 수정
 systemctl --user daemon-reload && systemctl --user enable --now discordbot@coder
 ```
-Claude Code CLI(`claude`)가 설치·로그인되어 있어야 합니다.
+Claude Code CLI(`claude`)가 설치·로그인되어 있어야 합니다. Go 포팅 버전(단일 실행 파일)은 [`Go/`](Go/README.md) 참고.
