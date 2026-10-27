@@ -1,0 +1,8 @@
+# 실제 설정(토큰·사용자 ID)은 커밋하지 않는다 - bots/<봇>/bot.env.example 을 복사해서 사용
+bots/*/bot.env
+data/
+workspace/
+.venv/
+__pycache__/
+*.pyc
+/Go/discord-claude-bot
